@@ -27,3 +27,16 @@ table {
   .box:nth-child(3){
     background-color: aliceblue;
   }
+
+  .flex_box{
+    display: flex;
+    flex-box:row nowrap;
+    align-items: flex-center;
+    justify-content: space-around;
+}
+
+.item_box{
+    width: 100px;
+    /* height: 100px; */
+    border: 1px solid red;
+}
