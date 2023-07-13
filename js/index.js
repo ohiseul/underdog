@@ -70,3 +70,80 @@ switch(a%2){
 
 
 }
+
+let input = prompt("숫자를 입략하세요")
+console.log(typeof(input));
+input = Number(input);
+console.log(typeof(input));
+
+switch(input % 2){
+    case 0:
+        console.log("짝수")
+        break;
+    case 1:
+        console.log("홀수")
+        break;
+    default:
+        console.log("숫자가 아닙니다")
+        break;
+        
+
+}
+
+let dayOfWeek = [ "monday", "tuesday","wednesday","thursday","friday","saturday","sunday",54, true, false]
+console.log(dayOfWeek[1]);
+
+let myInfo = ["직업","거주지",29,true]
+
+let obj ={
+    name: "이름",
+    age:29,
+    occupation:"직업",
+    isMarried:false,
+    favoriteMovies:["영화1","영화2"],
+    favoriteFoods:[
+        {
+            name: "햄버거",
+            isHealthy:false
+        },
+        
+        {
+            name: "피자",
+            isHealthy:false
+        }
+
+    ]
+}
+
+console.log(obj.name);
+console.log(obj.occupation);
+console.log(obj.favoriteFoods[1]);
+
+
+function sayHello(name){
+    console.log("Hello", name)
+
+}
+
+sayHello();
+sayHello("kim");
+
+function addNum(a,b){
+    console.log(a+b);
+    return a+b;
+}
+
+let result = addNum(2,3);
+console.log(result);
+
+
+let obj2 = {
+    name:"이름",
+    age:29,
+    sayHello: function(){
+        return "Hello";
+    }
+
+}
+
+console.log(obj2.sayHello());
