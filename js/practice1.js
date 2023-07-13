@@ -48,7 +48,30 @@ console.log(arr3);
 //3.구구단
 var gugu = prompt("원하는 구구단을 입력해주세요");
 if(!isNaN(gugu)){
-for(var i = 1; i<10; i++){
-    console.log(gugu+"x"+i+"="+(i*gugu));
+    for(var i = 1; i<10; i++){
+        console.log(gugu+"x"+i+"="+(i*gugu));
+    }
 }
+
+function canEnter(gender,age){
+    if(gender=="female" || age >25){
+        return true;
+    }
+    return false;
+
+}
+
+console.log(canEnter("male",30));
+
+//4. 숫자 돌면서 출력
+for(i=1; i <= 30 ; i++){
+    if(i % 3 ==0){
+        console.log("fizz");   
+    }else if(i % 5 == 0){
+        console.log("buzz");   
+    }else if( (i%3== 0) && (i%5==0) ){
+        console.log("fizzbuzz");   
+    }else{
+        console.log(i);   
+    }
 }
