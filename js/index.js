@@ -192,18 +192,29 @@
 
 // document.title = "타이틀 변경";
 
-// let title;
-// title = document.querySelector('#title');
+let title;
+title = document.querySelector('#title');
 // title.style.color ="red";
 // title.innerHTML ="타이틀 js변경";
 
 
 //이벤트
-window.addEventListener("resize", notifyResize);
+// window.addEventListener("resize", notifyResize);
 
-function notifyResize(){
-    console.log("리사이즈됨");
-    let width = window.innerWidth;
-    let heigth = window.innerHeight;
-    console.log(width,heigth); 
+// function notifyResize(){
+//     console.log("리사이즈됨");
+//     let width = window.innerWidth;
+//     let heigth = window.innerHeight;
+//     console.log(width,heigth); 
+// }
+title.addEventListener("click", handleClick)
+
+
+function colorCange(){
+    return "rgb("+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+")";
+}
+function handleClick(){
+    var other_color = colorCange(); 
+    console.log(other_color);
+    title.style.color = other_color;
 }
