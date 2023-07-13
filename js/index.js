@@ -220,9 +220,9 @@ function handleClick(){
     title.style.color = other_color;
 }
 
-title.addEventListener("mouseover", handleClick2);
 //컬러배열 
-var arr = ["blue","red","yello","green"];
+title.addEventListener("mouseover", handleClick2);
+var arr = ["blue","red","yellow","green"];
 function handleClick2(){
     title.style.color = arr[Math.floor(Math.random() * arr.length)];
 }
