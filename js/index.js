@@ -1,4 +1,4 @@
-alert("ok");
+// alert("ok");
 // console.log(50);
 // console.log(50-3);
 
@@ -149,25 +149,39 @@ alert("ok");
 
 // console.log(obj2.sayHello());
 
-for(i=0; i<30;i++){
-    if(i%2 ==0){
-        console.log(i)
-    }else if(i%5==0){
-        console.log('5읩 배수이다')
-    }else{
-    }
-}
+// for(i=0; i<30;i++){
+//     if(i%2 ==0){
+//         console.log(i)
+//     }else if(i%5==0){
+//         console.log('5읩 배수이다')
+//     }else{
+//     }
+// }
 
-let arr = ['사과','배','복숭아','바나나','딸기'];
+// let arr = ['사과','배','복숭아','바나나','딸기'];
+// let i = 0;
+// // for(let i=0; i < arr.length; i++){
+// //     console.log(arr[i]);
+// // }
+햣
+// // for(let i of arr){
+// //     console.log(i);
+// // }
 
-for(let i=0; i < arr.length; i++){
-    console.log(arr[i]);
-}
+// // for(let i in arr){
+// //     console.log(arr[i]);
+// // }
+// // while( i < 5 ){
+// //     console.log(i);
+// //     i = i + 2;
+// // }
 
-for(let i of arr){
-    console.log(i);
-}
+// let value = 0;
+// do{
+//     console.log(value);
+//     value++;
 
-for(let i in arr){
-    console.log(arr[i]);
-}
+// }
+// while( value < 5 );
+
+// console.log('바깥', value);
