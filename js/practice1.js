@@ -26,40 +26,9 @@ function max(arr) {
     }
     return max;
   };
-  
 
-
-//   var array = [];
-                
-         
-/* 
-var end;
-while(end == ""){
-    var temp = prompt("배열에 넣을 숫자를 입략하세요('끝'이라고 입력시 종료합니다.)");
-      switch(num){
-        case isNaN(num) == false :
-          console.log("숫자입니다.");
-          
-          for (var i = 0; i < array.length ; i++){
-              if(array[i].length === 0){
-                  array[i] == num
-                  console.log("넣는다"+arr[i]);
-                }else{
-                    console.log("있어"+arr[i]);
-                }
-            }
-            break;
-            
-        case isNaN(num) == true :
-            console.log("종료합니다. 곧 배열이 출력됩니다.");
-            console.log(max(array));
-            break;
-            
-        default:
-            break;
-    }
-
-} */
+  var array = [1,2,3];
+  console.log("가장큰 값" + max(array));
 
 
 let arr2 = [1,2,3];
