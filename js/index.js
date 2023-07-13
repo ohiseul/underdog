@@ -207,9 +207,10 @@ title = document.querySelector('#title');
 //     let heigth = window.innerHeight;
 //     console.log(width,heigth); 
 // }
-title.addEventListener("click", handleClick)
+title.addEventListener("click", handleClick);
 
 
+//클릭 시 색상변경
 function colorCange(){
     return "rgb("+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+")";
 }
@@ -217,4 +218,11 @@ function handleClick(){
     var other_color = colorCange(); 
     console.log(other_color);
     title.style.color = other_color;
+}
+
+title.addEventListener("mouseover", handleClick2);
+//컬러배열 
+var arr = ["blue","red","yello","green"];
+function handleClick2(){
+    title.style.color = arr[Math.floor(Math.random() * arr.length)];
 }
