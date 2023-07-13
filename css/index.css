@@ -1,13 +1,13 @@
-.flex_box{
+/* .flex_box{
     display: flex;
     flex-box:row nowrap;
     align-items: flex-start;
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
 }
 
 .item_box{
     width: 100px;
-    /* height: 100px; */
+    height: 100px;
     border: 1px solid red;
 }
 .box01{
@@ -21,3 +21,12 @@
     font-size: 60px;
 
 }
+*/
+
+body{
+ background-color: azure;
+}
+#title{
+ color: blue;
+}
+

@@ -185,3 +185,25 @@
 // while( value < 5 );
 
 // console.log('바깥', value);
+
+
+// var titleColor = document.getElementById('title').style.color;
+// console.log("?"+titleColor);
+
+// document.title = "타이틀 변경";
+
+// let title;
+// title = document.querySelector('#title');
+// title.style.color ="red";
+// title.innerHTML ="타이틀 js변경";
+
+
+//이벤트
+window.addEventListener("resize", notifyResize);
+
+function notifyResize(){
+    console.log("리사이즈됨");
+    let width = window.innerWidth;
+    let heigth = window.innerHeight;
+    console.log(width,heigth); 
+}
