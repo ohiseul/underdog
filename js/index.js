@@ -192,118 +192,120 @@
 
 // document.title = "타이틀 변경";
 
-let title;
-title = document.querySelector('#title');
-// title.style.color ="red";
-// title.innerHTML ="타이틀 js변경";
+// let title;
+// title = document.querySelector('#title');
+// // title.style.color ="red";
+// // title.innerHTML ="타이틀 js변경";
 
 
-//이벤트
-// window.addEventListener("resize", notifyResize);
+// //이벤트
+// // window.addEventListener("resize", notifyResize);
 
-// function notifyResize(){
-//     console.log("리사이즈됨");
-//     let width = window.innerWidth;
-//     let heigth = window.innerHeight;
-//     console.log(width,heigth); 
+// // function notifyResize(){
+// //     console.log("리사이즈됨");
+// //     let width = window.innerWidth;
+// //     let heigth = window.innerHeight;
+// //     console.log(width,heigth); 
+// // }
+// title.addEventListener("click", handleClick);
+
+
+// //클릭 시 색상변경
+// function colorCange(){
+//     return "rgb("+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+")";
 // }
-title.addEventListener("click", handleClick);
+// function handleClick(){
+//     var other_color = colorCange(); 
+//     console.log(other_color);
+//     title.style.color = other_color;
+// }
 
-
-//클릭 시 색상변경
-function colorCange(){
-    return "rgb("+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+")";
-}
-function handleClick(){
-    var other_color = colorCange(); 
-    console.log(other_color);
-    title.style.color = other_color;
-}
-
-//컬러배열 
-title.addEventListener("mouseover", handleClick2);
-var arr = ["blue","red","yellow","green"];
-function handleClick2(){
-    title.style.color = arr[Math.floor(Math.random() * arr.length)];
-}
+// //컬러배열 
+// title.addEventListener("mouseover", handleClick2);
+// var arr = ["blue","red","yellow","green"];
+// function handleClick2(){
+//     title.style.color = arr[Math.floor(Math.random() * arr.length)];
+// }
 
 
 
-//등급산정
-while (true){
-    let testGrade= prompt("시험점수를 입력하세요 (00 입력시 종료)");
-    if(testGrade === "00"){
-        break;
-    }
+// //등급산정
+// while (true){
+//     let testGrade= prompt("시험점수를 입력하세요 (00 입력시 종료)");
+//     if(testGrade === "00"){
+//         break;
+//     }
 
-    testGrade = Number(testGrade);
+//     testGrade = Number(testGrade);
     
-    if(testGrade >= 90){
-        console.log("A등급");
-    }else if(testGrade >= 80){
-        console.log("B등급");
-    }else if(testGrade >= 70){
-        console.log("C등급");
-    }else if(testGrade >= 60){
-        console.log("D등급");
-    }else{
-        console.log("조금 더 노력하세요");
-    }
+//     if(testGrade >= 90){
+//         console.log("A등급");
+//     }else if(testGrade >= 80){
+//         console.log("B등급");
+//     }else if(testGrade >= 70){
+//         console.log("C등급");
+//     }else if(testGrade >= 60){
+//         console.log("D등급");
+//     }else{
+//         console.log("조금 더 노력하세요");
+//     }
     
-}
+// }
 
-//반복문이용 원하는 데이터 출력
-let dataInfo = [
-    {회원번호: 0, 아이디: "red", 성별: "남자", 나이: 21 }, 
-    {회원번호: 1, 아이디: "yellow", 성별: "남자", 나이: 17 }, 
-    {회원번호: 2, 아이디: "orange", 성별: "여자", 나이: 16 }, 
-    {회원번호: 3, 아이디: "green", 성별: "여자", 나이: 55} 
-];
-//1.20살 이상인 여성
-function findWomen(){
-    for (let i =0; i < dataInfo.length ; i++){
-        if(dataInfo[i].나이 >= 20 && dataInfo[i].성별 == "여자"){
-            console.log("20살 이상인:"+ JSON.stringify(dataInfo[i]));  
-        }
-    }
-}
-
-//2. 나이의 총합
-function addAge(){
-    let tempaAge= 0;
-    for (let i =0; i < dataInfo.length ; i++){
-        tempaAge = tempaAge + Number(dataInfo[i].나이);
-    }
-    console.log("나이 총합:"+tempaAge);
-}
-
-
-//3.가장 나이가 많은사람과 적은 사람
-function findMinMax(way){
-    if(way == "함수"){
-
-
-    }else{
+// //반복문이용 원하는 데이터 출력
+// let dataInfo = [
+//     {회원번호: 0, 아이디: "red", 성별: "남자", 나이: 21 }, 
+//     {회원번호: 1, 아이디: "yellow", 성별: "남자", 나이: 17 }, 
+//     {회원번호: 2, 아이디: "orange", 성별: "여자", 나이: 16 }, 
+//     {회원번호: 3, 아이디: "green", 성별: "여자", 나이: 55} 
+// ];
+// //1.20살 이상인 여성
+// function findWomen(){
+//     for (let i =0; i < dataInfo.length ; i++){
+//         if(dataInfo[i].나이 >= 20 && dataInfo[i].성별 == "여자"){
+//             console.log("20살 이상인:"+ JSON.stringify(dataInfo[i]));  
+//         }
+//     }
+// }
 
 
 
-    }
-}
+// //2. 나이의 총합
+// function addAge(){
+//     let tempaAge= 0;
+//     for (let i =0; i < dataInfo.length ; i++){
+//         tempaAge = tempaAge + Number(dataInfo[i].나이);
+//     }
+//     console.log("나이 총합:"+tempaAge);
+// }
 
 
-//빈복문을 사용하여 0~ 100 까지 짝수들의 합 구하기
-function evenPlus(){
+// //3.가장 나이가 많은사람과 적은 사람
+// function findMinMax(way){
+//     if(way == "함수"){
 
-    let temp = 0;
-    for(let i=0 ; i <=100 ; i++){
-        if(i % 2 ==0){
-            temp = temp+i
-        }
-    }
-    console.log("0~100까지 짝수의 합 : "+ temp);
-}
 
-findWomen();
-addAge();
-findMinMax();
-evenPlus();
+//     }else{
+
+
+
+//     }
+// }
+
+
+// //빈복문을 사용하여 0~ 100 까지 짝수들의 합 구하기
+// function evenPlus(){
+
+//     let temp = 0;
+//     for(let i=0 ; i <=100 ; i++){
+//         if(i % 2 ==0){
+//             temp = temp+i
+//         }
+//     }
+//     console.log("0~100까지 짝수의 합 : "+ temp);
+// }
+
+// findWomen();
+// addAge();
+// findMinMax();
+// evenPlus();
