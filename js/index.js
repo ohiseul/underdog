@@ -262,8 +262,8 @@ let dataInfo = [
 //1.20살 이상인 여성
 function findWomen(){
     for (let i =0; i < dataInfo.length ; i++){
-        if(dataInfo[i].나이 >= 20){
-            console.log("20살 이상인 여성 아이디:"+ dataInfo[i].아이디);  
+        if(dataInfo[i].나이 >= 20 && dataInfo[i].성별 == "여자"){
+            console.log("20살 이상인:"+ JSON.stringify(dataInfo[i]));  
         }
     }
 }
